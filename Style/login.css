@@ -1,0 +1,115 @@
+:root {
+    --cor-preto: #000000;
+    --cor-cinza-escuro: #2E2E2E;
+    --cor-cinza-claro: #D3D3D3;
+    --cor-branco: #FFFFFF;
+    --cor-vermelho: #FF4C4C;
+}
+*{border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #D3D3D3;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+header{
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-texto{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.login-card{
+    border: var(--cor-preto) solid;
+    background-color: var(--cor-cinza-escuro);
+    border-radius: 20px;
+    width: 550px;
+    height: auto;
+    margin: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.login-card.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btns button{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    margin: 10px;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btns button:hover{
+    background-color: var(--cor-cinza-claro);
+    width: 160px;
+    cursor: pointer;
+}
+
+.login-card form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.login-card input{
+    border: var(--cor-cinza-claro) solid;
+    border-radius: 30px;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    padding: 2px;
+}
+
+.checkbox{
+    display:flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 18px;   
+    height: 18px;
+}
+
+
+
